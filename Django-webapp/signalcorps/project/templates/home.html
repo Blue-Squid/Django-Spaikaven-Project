@@ -1,0 +1,34 @@
+{% extends "header.html" %} {% block content %}
+{% load static %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+            <h2>Use this link to encript messages <a href="https://encipher.it">ENCRYPT</a></h2>
+            <form id="contact-form" method="post" action="send_message" role="form">
+                <div class="messages"></div>
+                <div class="controls">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="form_message">Message *</label>
+                                <textarea id="form_message" name="message" class="form-control" placeholder="Go to the link above and encrypt message and paste it here." rows="4" required="required" data-error="Please,leave us a message."></textarea>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <input type="submit" class="btn btn-success btn-send" value="Send message">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p class="text-muted"><strong>*</strong> This field are required.</p>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div><!-- /.8 -->
+    </div> <!-- /.row-->
+</div> <!-- /.container-->
+
+{% endblock %}

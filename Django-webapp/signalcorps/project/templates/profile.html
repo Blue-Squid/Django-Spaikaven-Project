@@ -1,0 +1,20 @@
+{% extends "header.html" %} {% block content %}
+{% load static %}
+
+<body>
+<h2 style="text-align:center">User Profile Card</h2>
+<div class="card">
+  <img src="{% static 'images\logo.jpg' %}" alt="Logo" style="width:100%">
+    {% for SignalCorps in data %}
+        <h3>{{SignalCorps.name}}</h3>
+    {% endfor %}
+  <p class="title">JOSEPH STALIN</p>
+  <p>MARSHAL OF USSR</p>
+  <div style="margin: 24px 0;">
+    
+ </div>
+ <p><button></button></p>
+</div>
+
+</body>
+{% endblock %}

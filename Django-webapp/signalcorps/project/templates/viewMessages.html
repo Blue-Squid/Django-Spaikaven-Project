@@ -1,0 +1,10 @@
+{% extends "header.html" %} {% block content %}
+{% load static %}
+<body>
+    {% for Communication in msg %}
+    <div class="alert alert-info">
+        <strong>WHO</strong> {{Communication.message}}
+    </div>
+    {% endfor %} 
+</body>
+{% endblock %}
